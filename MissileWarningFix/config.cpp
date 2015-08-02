@@ -7,7 +7,7 @@ class CfgPatches {
 			"CAAIR_E",
 			"CAAIR2"
 		};
-		version = 1.5;
+		version = 1.6;
 		author = "nitro404";
 	};
 };
@@ -16,6 +16,12 @@ class CfgVehicles {
 	class Plane;
 	class Helicopter;
 	class AH1_Base : Helicopter {
+		incommingMisslieDetectionSystem = 16;
+		lockDetectionSystem = "8 + 4";
+		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
+		soundIncommingMissile[] = { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 4 };
+	};
+	class AH64D : Helicopter {
 		incommingMisslieDetectionSystem = 16;
 		lockDetectionSystem = "8 + 4";
 		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
@@ -45,13 +51,25 @@ class CfgVehicles {
 		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
 		soundIncommingMissile[] = { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 4 };
 	};
+	class CH47_base_EP1 : Helicopter {
+		incommingMisslieDetectionSystem = 16;
+		lockDetectionSystem = "8 + 4";
+		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
+		soundIncommingMissile[] = { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 4 };
+	};
 	class UH60_Base : Helicopter {
 		incommingMisslieDetectionSystem = 16;
 		lockDetectionSystem = "8 + 4";
 		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
 		soundIncommingMissile[] = { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 4 };
 	};
-	class AH6X_EP1 : Helicopter {
+	class UH60M_base_EP1: UH60_Base {
+		incommingMisslieDetectionSystem = 16;
+		lockDetectionSystem = "8 + 4";
+		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
+		soundIncommingMissile[] = { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 4 };
+	};
+	class UH60M_US_base_EP1: UH60M_base_EP1 {
 		incommingMisslieDetectionSystem = 16;
 		lockDetectionSystem = "8 + 4";
 		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
@@ -76,6 +94,12 @@ class CfgVehicles {
 		soundIncommingMissile[] = { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 4 };
 	};
 	class MV22 : Plane {
+		incommingMisslieDetectionSystem = 16;
+		lockDetectionSystem = "8 + 4";
+		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
+		soundIncommingMissile[] = { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 4 };
+	};
+	class C130J : Plane {
 		incommingMisslieDetectionSystem = 16;
 		lockDetectionSystem = "8 + 4";
 		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
