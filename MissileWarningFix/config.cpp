@@ -7,7 +7,7 @@ class CfgPatches {
 			"CAAIR_E",
 			"CAAIR2"
 		};
-		version = 1.6;
+		version = 1.6.1;
 		author = "nitro404";
 	};
 };
@@ -15,13 +15,14 @@ class CfgVehicles {
 	class Air;
 	class Plane;
 	class Helicopter;
+	class AH64_base_EP1;
 	class AH1_Base : Helicopter {
 		incommingMisslieDetectionSystem = 16;
 		lockDetectionSystem = "8 + 4";
 		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
 		soundIncommingMissile[] = { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 4 };
 	};
-	class AH64D : Helicopter {
+	class AH64D : AH64_base_EP1 {
 		incommingMisslieDetectionSystem = 16;
 		lockDetectionSystem = "8 + 4";
 		soundLocked[] =           { "\ca\Tracked\Data\Sound\alarm_loop1", 0.00031599999, 2 };
